@@ -8,12 +8,12 @@ namespace ScriptManagerTagHelper
 {
     // You may need to install the Microsoft.AspNet.Razor.Runtime package into your project
     [HtmlTargetElement("script", Attributes = MARKER_ATTRIBUTE)]
-    public class ScriptTag : TagHelper
+    public class SegmentTag : TagHelper
     {
         private const string MARKER_ATTRIBUTE = "managed";
-        private ScriptCollector _manager;
+        private SegmentCollector _manager;
 
-        public ScriptTag(ScriptCollector manager)
+        public SegmentTag(SegmentCollector manager)
         {
             _manager = manager;
         }

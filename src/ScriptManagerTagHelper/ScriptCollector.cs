@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ScriptManagerTagHelper
 {
-    public class ScriptCollector
+    public class SegmentCollector
     {
         public List<TagHelperOutput> Scripts { get; set; }
-        public ScriptCollector()
+        public SegmentCollector()
         {
             this.Scripts = new List<TagHelperOutput>();
         }

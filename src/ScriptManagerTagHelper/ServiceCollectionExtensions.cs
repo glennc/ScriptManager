@@ -8,9 +8,9 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddScriptManager(this IServiceCollection services)
+        public static IServiceCollection AddSegmentManager(this IServiceCollection services)
         {
-            services.AddScoped(typeof(ScriptCollector));
+            services.AddScoped(typeof(SegmentCollector));
             return services;
         }
     }

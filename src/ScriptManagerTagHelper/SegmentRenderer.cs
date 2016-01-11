@@ -7,11 +7,11 @@ using Microsoft.AspNet.Razor.TagHelpers;
 namespace ScriptManagerTagHelper
 {
     [HtmlTargetElement("render-managed-scripts")]
-    public class ScriptRenderTag : TagHelper
+    public class SegmentRenderTag : TagHelper
     {
-        private ScriptCollector _manager;
+        private SegmentCollector _manager;
 
-        public ScriptRenderTag(ScriptCollector manager)
+        public SegmentRenderTag(SegmentCollector manager)
         {
             _manager = manager;
         }
