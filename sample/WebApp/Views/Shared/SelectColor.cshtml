@@ -1,8 +1,18 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<segment target="stylesheets">
+    <link rel="stylesheet" href="~/lib/colorpicker/css/bootstrap-colorpicker.min.css" />
+</segment>
+
+<segment target="scripts">
+    <script distinct="jquery" src="~/lib/jquery/dist/jquery.js"></script>
+    <script distinct="jquery.colorpicker" src="~/lib/colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script distinct="pickAColorRegister">
+        $(document).ready(function () {
+            $('#pickAColor').colorpicker({
+                format: 'hex'
+            });
+        });
+    </script>
+</segment>
 
 <form asp-controller="Home" asp-action="CreateLabels" method="post" role="form">
     <div class="form-group">
@@ -10,15 +20,4 @@
         <input id="pickAColor" class="form-control" type="text" value="#1e2966" />
         <span class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-default">Create Label</button>
 </form>
-
-<script managed>
-    $(document).ready(function () {
-        $('#pickAColor').colorpicker({
-            format: 'hex'
-        });
-    });
-</script>
-
-<script managed src="~/js/site.js" />

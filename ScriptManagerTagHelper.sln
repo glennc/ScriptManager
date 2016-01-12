@@ -14,7 +14,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ScriptManagerTagHelper", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{039D10A6-9D88-4859-832C-42620BB00D4F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApp", "WebApp\WebApp.xproj", "{A5793BC3-B6D1-40AD-BF0C-2812E59AEE57}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApp", "sample\WebApp\WebApp.xproj", "{A5793BC3-B6D1-40AD-BF0C-2812E59AEE57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

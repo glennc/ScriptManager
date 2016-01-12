@@ -10,6 +10,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddSegmentManager(this IServiceCollection services)
         {
+            services.AddScoped(typeof(DistinctTracker));
             services.AddScoped(typeof(SegmentCollector));
             return services;
         }
