@@ -26,14 +26,16 @@ namespace ScriptManagerTagHelper
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            var uniqueId = GetUniqueId(context, output);
-            if(_tracker.DistinctTagsRendered.Contains(uniqueId))
+            var distinctAttribute = output.Attributes["distinct"];
+
+            if(_tracker.DistinctTagsRendered.Contains(distinctAttribute.Value.ToString()))
             {
                 output.SuppressOutput();
             }
             else
             {
-                _tracker.DistinctTagsRendered.Add(uniqueId);
+                _tracker.DistinctTagsRendered.Add(distinctAttribute.Value.ToString());
+                output.Attributes.Remove(distinctAttribute);
             }
         }
 

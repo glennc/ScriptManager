@@ -2,6 +2,16 @@
     <link rel="stylesheet" href="~/lib/colorpicker/css/bootstrap-colorpicker.min.css" />
 </segment>
 
+<segment target="scripts" distinct="pickAColorRegister">
+    <script distinct="pickAColorRegister">
+        $(document).ready(function () {
+            $('#pickAColor').colorpicker({
+                format: 'hex'
+            });
+        });
+    </script>
+</segment>
+
 <segment target="scripts">
     <script distinct="jquery" src="~/lib/jquery/dist/jquery.js"></script>
     <script distinct="jquery.colorpicker" src="~/lib/colorpicker/js/bootstrap-colorpicker.min.js"></script>
